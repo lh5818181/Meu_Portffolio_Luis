@@ -1,61 +1,8 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth; /* Suave rolagem ao clicar nos links do menu */
-}
-
-.header {
-  width: 100%;
-  background: linear-gradient(135deg, #2b5876, #4e4376);
-  padding: 10px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.menu .menu-item {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 15px;
-  padding: 10px 15px;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.menu .menu-item:hover {
-  color: #1e85b8;
-  transform: scale(1.1);
-}
-
-.hero {
-  background: url('components/images/26174.png') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #ffffff;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 24px;
 }
 
 .section {
