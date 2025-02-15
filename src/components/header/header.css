@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .menu .menu-item {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .menu .menu-item:hover {
+    color: #1e85b8;
+    transform: scale(1.1);
+  }
+  
