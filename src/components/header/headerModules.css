@@ -17,6 +17,10 @@
     padding: 0 10px;
   }
 
+  .logo {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* sombra de cor branca */
+}
+
    
   
   .menu .menu-item, .logo {
