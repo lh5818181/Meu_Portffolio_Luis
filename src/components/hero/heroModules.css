@@ -45,6 +45,13 @@
 
 /* Responsividade para Hero */
 @media (max-width: 1024px) {
+    .hero {
+        width: 101%;
+        padding: 60px 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
     .hero h1 {
         font-size: 36px;
     }

@@ -40,8 +40,16 @@
 
   /* Responsividade para Header */
 @media (max-width: 1024px) {
+  .header {
+
+  }
   .header-container {
-      padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 10px;
+    flex-direction: column;
   }
 }
 
