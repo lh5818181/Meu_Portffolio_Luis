@@ -1,11 +1,11 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaThreads } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp} from 'react-icons/fa6';
 import './footerModules.css';
 
 const Footer: React.FC = () => {
   return (
     <footer>
-      <div className="container">
+      <div className="footer-container">
         <p>&copy; 2025 Luis Henrique Vieira de Oliveira. Todos os direitos reservados.</p>
 
         <div className="social-icons">
@@ -18,8 +18,8 @@ const Footer: React.FC = () => {
           <a href="https://www.instagram.com/devriqueoliver/?next=%2F" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
-          <a href="https://www.threads.net/@eoq.rique" target="_blank" rel="noopener noreferrer">
-            <FaThreads />
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp />
           </a>
         </div>
       </div>

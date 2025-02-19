@@ -1,4 +1,5 @@
 .about {
+    max-width: 1280px;
     background-color: #f8f9fa;
     padding: 80px 20px;
     display: flex;
@@ -6,7 +7,6 @@
 }
 
 .about-container {
-    max-width: 900px;
     background: #ffffff;
     padding: 40px;
     border-radius: 10px;
@@ -68,6 +68,36 @@
         font-size: 16px;
     }
 
+    .about-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+/* Responsividade para About */
+@media (max-width: 1024px) {
+    .about-container {
+        padding: 30px;
+    }
+    .about h2 {
+        font-size: 24px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+    .about-container {
+        padding: 20px;
+    }
+    .about h2 {
+        font-size: 22px;
+    }
+    .about p {
+        font-size: 14px;
+        max-width: 100%;
+    }
     .about-img {
         width: 120px;
         height: 120px;

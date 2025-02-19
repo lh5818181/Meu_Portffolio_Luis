@@ -1,18 +1,17 @@
 .header {
+  max-width: 1280px;
   width: 100%;
   background: #0A192F;
-  padding: 10px 0;
+  padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   z-index: 1000;
 }
-  .container {
+  .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
   }
@@ -37,3 +36,27 @@
     text-shadow: 0px 0px 8px #64FFDA;
   }
   
+
+
+  /* Responsividade para Header */
+@media (max-width: 1024px) {
+  .header-container {
+      padding: 0 5px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+      padding: 15px;
+  }
+  .header-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+  }
+  .logo {
+      margin-bottom: 10px;
+  }
+  .menu {
+      display: none; /* Ocultar o menu em telas menores */
+  }
+}

@@ -4,7 +4,7 @@ import './headerModules.css';
 const Header: React.FC = () => {
   return (
     <header className="header">
-      <div className="container">
+      <div className="header-container">
         <div className="logo">Personalize seus serviços</div>
         <nav className="menu">
           <a href="#hero" className="menu-item">Início</a>
