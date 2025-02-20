@@ -1,5 +1,4 @@
 .header {
-  max-width: 1280px;
   width: 100%;
   background: #0A192F;
   padding: 20px;
@@ -12,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin-right: 40px;
     padding: 0 10px;
   }
 
@@ -41,7 +40,7 @@
   /* Responsividade para Header */
 @media (max-width: 1024px) {
   .header {
-
+    max-width: 100%;
   }
   .header-container {
     display: flex;
@@ -56,7 +55,7 @@
 @media (max-width: 768px) {
   .header {
       max-width: 100%;
-      padding: 15px 0;
+      padding: 10px 0;
   }
   .header-container {
       display: flex;

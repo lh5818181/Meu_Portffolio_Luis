@@ -1,5 +1,4 @@
 .contact {
-    max-width: 1280px;
     padding: 80px 20px;
     background-color: #f8f9fa;
     text-align: center;
@@ -103,6 +102,9 @@
 
 /* Responsividade para Contact */
 @media (max-width: 1024px) {
+    .contact {
+        width: 100%;
+    }
     .contact h2 {
         font-size: 30px;
     }
@@ -113,7 +115,11 @@
         max-width: 90%;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px){
+    .contact {
+        width: 100%;
+        padding: 80px 34px;
+    }
     .contact h2 {
         font-size: 24px;
     }

@@ -1,6 +1,5 @@
 .hero {
     background: linear-gradient(135deg, #0A192F 0%, #021B79 100%);
-    max-width: 1280px;
     min-height: 90vh; /* Em vez de height fixo */
     padding: 100px 20px;
     display: flex;
@@ -31,6 +30,7 @@
     font-size: 24px;
     font-weight: 700;
     animation: fadeIn 1.5s ease-in-out;
+    margin-left: 80px;
 }
 
 
@@ -46,8 +46,7 @@
 /* Responsividade para Hero */
 @media (max-width: 1024px) {
     .hero {
-        width: 101%;
-        padding: 60px 0;
+        width: 100%;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -57,11 +56,13 @@
     }
     .hero p {
         font-size: 20px;
+        margin-left: 24px;
     }
 }
 @media (max-width: 768px) {
     .hero {
-        padding: 60px 20px;
+        width: 100%;
+        padding: 60px 34px;
     }
     .hero-container {
         display: flex;
@@ -72,7 +73,7 @@
         flex-direction: column;
     }
     .hero h1 {
-        font-size: 44px;
+        font-size: 40px;
     }
     .hero p {
         font-size: 26px;

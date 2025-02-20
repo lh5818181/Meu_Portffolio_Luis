@@ -1,5 +1,4 @@
 .skills {
-    max-width: 1280px;
     padding: 80px 20px;
     background: linear-gradient(135deg, #0A192F 0%, #021B79 100%);
     text-align: center;
@@ -69,14 +68,29 @@
 
 /* Responsividade para Skills */
 @media (max-width: 1024px) {
+    .skills {
+        width: 100%;
+    }
+    
+    .containerSkills {
+        display: flex;
+        flex-direction: column;
+    }
     .skills h2 {
         font-size: 30px;
     }
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 @media (max-width: 768px) {
+    .skills {
+        width: 100%;
+        padding: 80px 34px;
+    }
     .containerSkills {
         display: flex;
         flex-direction: column;

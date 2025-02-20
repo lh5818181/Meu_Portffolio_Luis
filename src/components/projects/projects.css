@@ -1,5 +1,4 @@
 .projects {
-    max-width: 1280px;
     padding: 80px 20px;
     background-color: #f8f9fa;
     text-align: center;
@@ -84,6 +83,10 @@
 
 /* Responsividade para Projects */
 @media (max-width: 1024px) {
+    .projects {
+        width: 100%;
+
+    }
     .projects h2 {
         font-size: 28px;
     }
@@ -91,11 +94,20 @@
         font-size: 16px;
     }
     .project-list {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        display: flex
+;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .projects {
+        width: 100%;
+        padding: 80px 34px;
+    }
     .projects h2 {
         font-size: 24px;
     }
@@ -103,6 +115,6 @@
         font-size: 14px;
     }
     .project-item {
-        max-width: 100%;
+        max-width: 70%;
     }
 }
