@@ -17,7 +17,7 @@ const projectsData = [
   {
     title: 'Clone do Site da Disney',
     description: 'Desenvolvido com HTML, CSS e JAVASCRIPT',
-    image: '/src/public/images/clone da disney.png',
+    image: 'https://raw.githubusercontent.com/lh5818181/Repositorioi_imagens_sitePrincipal/refs/heads/main/clone%20da%20disney.png',
     link: 'https://clone-disney-plus-2wds.vercel.app'
   }
 ];
