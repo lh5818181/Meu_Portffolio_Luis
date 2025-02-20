@@ -5,13 +5,13 @@ const projectsData = [
   {
     title: 'Landing Page HTML & CSS',
     description: 'Uma landing page responsiva desenvolvida com HTML, CSS e Bootstrap.',
-    image: '/src/public/images/Landingpage para evento.png',
+    image: 'https://raw.githubusercontent.com/lh5818181/Repositorioi_imagens_sitePrincipal/refs/heads/main/Landingpage%20para%20evento.png',
     link: 'https://aniversario-luis-lvux.vercel.app'
   },
   {
     title: 'Calculadora Aritmética',
     description: 'Calculadora desenvolvida com React e gráficos dinâmicos.',
-    image: '/src/public/images/Calculadora Aritmética.png',
+    image: 'https://raw.githubusercontent.com/lh5818181/Repositorioi_imagens_sitePrincipal/refs/heads/main/Calculadora%20Aritm%C3%A9tica.png',
     link: 'https://calculadora-aritimetica-vue-js-nu.vercel.app'
   },
   {
