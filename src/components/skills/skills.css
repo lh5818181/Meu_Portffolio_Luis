@@ -106,6 +106,6 @@
         flex-wrap: wrap;
     }
     .skill-card {
-        margin: 0 auto;
+        margin: 5px;
     }
 }
