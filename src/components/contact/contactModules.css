@@ -118,7 +118,10 @@
 @media (max-width: 768px){
     .contact {
         width: 100%;
-        padding: 80px 34px;
+        padding: 80px 0px;
+    }
+    .containerContact {
+        width: 90%;
     }
     .contact h2 {
         font-size: 24px;
@@ -127,7 +130,9 @@
         font-size: 14px;
     }
     .contact form {
-        max-width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
     }
     .contact button {
         padding: 10px 15px;

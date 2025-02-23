@@ -89,11 +89,12 @@
 @media (max-width: 768px) {
     .skills {
         width: 100%;
-        padding: 80px 34px;
+        padding: 80px 0px;
     }
     .containerSkills {
         display: flex;
         flex-direction: column;
+        padding: 0px;
     }
     .skills h2 {
         font-size: 24px;

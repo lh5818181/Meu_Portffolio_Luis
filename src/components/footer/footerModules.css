@@ -49,6 +49,7 @@ footer p {
 @media (max-width: 768px) {
     footer {
         width: 100%;
+        padding: 10px 0px;
     }
     .social-icons a {
         font-size: 18px;

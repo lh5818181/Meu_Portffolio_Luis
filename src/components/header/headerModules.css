@@ -7,37 +7,48 @@
   top: 0;
   z-index: 1000;
 }
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 40px;
-    padding: 0 10px;
-  }
 
-  .logo {
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* sombra de cor branca */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  padding: 0 10px;
 }
 
-   
-  
-  .menu .menu-item, .logo {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 10px 15px;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .menu .menu-item:hover {
-    color: #64FFDA;
-    text-shadow: 0px 0px 8px #64FFDA;
-  }
-  
+.logo {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* sombra de cor branca */
+}
 
+.menu .menu-item, .logo {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 10px 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
 
-  /* Responsividade para Header */
+.menu .menu-item:hover {
+  color: #64FFDA;
+  text-shadow: 0px 0px 8px #64FFDA;
+}
+
+/* Ícone do hambúrguer */
+.hamburger {
+  display: none; /* Inicialmente escondido */
+  cursor: pointer; /* Cursor pointer para indicar clique */
+}
+
+.hamburger div {
+  width: 25px; /* Largura da barra do ícone */
+  height: 2px; /* Altura da barra do ícone */
+  background-color: #fff; /* Cor da barra do ícone */
+  margin: 5px 0; /* Espaçamento entre as barras */
+  transition: 0.4s; /* Transição suave */
+}
+
+/* Responsividade para Header */
 @media (max-width: 1024px) {
   .header {
     max-width: 100%;
@@ -54,19 +65,26 @@
 
 @media (max-width: 768px) {
   .header {
-      max-width: 100%;
-      padding: 10px 0;
+    max-width: 100%;
+    padding: 10px 0;
   }
   .header-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
   .logo {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
   .menu {
-      display: none; /* Ocultar o menu em telas menores */
+    display: none; /* Ocultar o menu em telas menores */
+  }
+  .hamburger {
+    display: block; /* Mostrar o ícone do hambúrguer em telas menores */
+  }
+  .menu.active {
+    display: flex; /* Mostrar o menu quando ativo */
+    flex-direction: column; /* Colocar itens do menu em coluna */
   }
 }

@@ -62,7 +62,7 @@
 @media (max-width: 768px) {
     .hero {
         width: 100%;
-        padding: 60px 34px;
+        padding: 60px 0px;
     }
     .hero-container {
         display: flex;
