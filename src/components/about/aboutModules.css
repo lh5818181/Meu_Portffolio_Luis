@@ -3,6 +3,7 @@
     padding: 80px 20px;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .about-container {
@@ -65,7 +66,7 @@
 @media (max-width: 1024px) {
     .about {
         width: 100%;
-        padding: 80px0 ;
+        padding: 80px 34px;
     }
     .about-container {
         padding: 62px;

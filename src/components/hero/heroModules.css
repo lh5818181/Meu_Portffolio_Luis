@@ -2,6 +2,7 @@
     background: linear-gradient(135deg, #0A192F 0%, #021B79 100%);
     min-height: 90vh; /* Em vez de height fixo */
     padding: 100px 20px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

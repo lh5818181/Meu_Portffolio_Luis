@@ -2,6 +2,7 @@
     padding: 80px 20px;
     background-color: #f8f9fa;
     text-align: center;
+    width: 100%;
 }
 
 .containerContact {
@@ -131,9 +132,9 @@
         font-size: 14px;
     }
     .contact form {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     .contact button {
         padding: 10px 15px;
