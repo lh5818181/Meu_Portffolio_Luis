@@ -70,6 +70,7 @@
 @media (max-width: 1024px) {
     .skills {
         width: 100%;
+        padding: 100px 34px;
     }
     
     .containerSkills {

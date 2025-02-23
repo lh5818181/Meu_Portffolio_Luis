@@ -104,6 +104,7 @@
 @media (max-width: 1024px) {
     .contact {
         width: 100%;
+        padding: 100px 34px;
     }
     .contact h2 {
         font-size: 30px;
