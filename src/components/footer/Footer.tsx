@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp} from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa6';
 import './footerModules.css';
 
 const Footer: React.FC = () => {
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           <a href="https://www.instagram.com/devriqueoliver/?next=%2F" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/{SEU_NUMERO_DE_WHATSAPP}" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp />
           </a>
         </div>

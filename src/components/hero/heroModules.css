@@ -1,6 +1,7 @@
+/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #0A192F 0%, #021B79 100%);
-    min-height: 90vh; /* Em vez de height fixo */
+    min-height: 90vh;
     padding: 100px 20px;
     width: 100%;
     display: flex;
@@ -12,11 +13,9 @@
 }
 
 .hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .hero h1 {
@@ -28,56 +27,62 @@
 }
 
 .hero p {
-    font-size: 24px;
-    font-weight: 700;
-    animation: fadeIn 1.5s ease-in-out;
-    margin-left: 80px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    animation: fadeIn 1.8s ease-in-out;
 }
 
+.hero .cta-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0A192F;
+    background: #64FFDA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
 
+.hero .cta-button a {
+    text-decoration: none;
+    color: #0A192F;
+}
+
+.hero .cta-button:hover {
+    background: #52e0c4;
+    transform: scale(1.05);
+}
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-
-
-
-/* Responsividade para Hero */
+/* Responsividade */
 @media (max-width: 1024px) {
-    .hero {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 100px 34px;
-    }
     .hero h1 {
-        font-size: 36px;
+        font-size: 40px;
     }
     .hero p {
         font-size: 20px;
-        margin: 14px;
     }
 }
+
 @media (max-width: 768px) {
     .hero {
-        width: 100%;
-        padding: 60px 0px;
-    }
-    .hero-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        padding: 0 10px;
-        flex-direction: column;
+        padding: 80px 20px;
     }
     .hero h1 {
         font-size: 36px;
     }
     .hero p {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .hero .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
     }
 }

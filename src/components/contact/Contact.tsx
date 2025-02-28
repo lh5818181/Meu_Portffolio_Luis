@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { FaUser, FaEnvelope, FaPaperPlane } from 'react-icons/fa';
+import { FaUser, FaEnvelope, FaPaperPlane, FaTag } from 'react-icons/fa';
 import './contactModules.css';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: '',
   });
 
@@ -16,7 +17,7 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     alert('Mensagem enviada com sucesso!');
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
   return (
@@ -48,6 +49,18 @@ const Contact: React.FC = () => {
               value={formData.email} 
               onChange={handleChange} 
               required 
+            />
+          </div>
+
+          <div className="input-group">
+            <FaTag className="icon" />
+            <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              placeholder="Assunto (Opcional)" 
+              value={formData.subject} 
+              onChange={handleChange} 
             />
           </div>
 
