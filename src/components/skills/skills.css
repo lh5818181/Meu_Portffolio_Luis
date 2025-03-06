@@ -64,6 +64,9 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .skills {
+        padding: 80px 0px;
+    }
     .skills h2 {
         font-size: 28px;
     }

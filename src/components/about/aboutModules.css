@@ -78,6 +78,12 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .about {
+        padding: 100px 0px;
+    }
+    .about p {
+        padding: 0px 20px;
+    }
     .about-container {
         flex-direction: column;
         text-align: center;

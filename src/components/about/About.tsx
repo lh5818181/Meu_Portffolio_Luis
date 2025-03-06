@@ -25,7 +25,7 @@ const About: React.FC = () => {
             sempre buscando aprender e aprimorar minhas habilidades.
           </p>
           <a 
-            href="https://main.d3e1i5z5vdswnl.amplifyapp.com/" 
+            href="https://main.d3q0n8jgkd43rl.amplifyapp.com/" 
             className="btn-saiba-mais" 
             target="_blank" 
             rel="noopener noreferrer"

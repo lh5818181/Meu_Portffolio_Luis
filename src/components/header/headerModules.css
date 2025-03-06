@@ -82,6 +82,9 @@
 
 /* Menu Mobile */
 @media (max-width: 768px) {
+  .header {
+    width: 90%;
+  }
   .menu {
     display: none;
     position: absolute;
@@ -96,6 +99,13 @@
   .menu.active {
     display: flex;
     flex-direction: column;
+  }
+  .menu ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
   }
 
   .menu li {
