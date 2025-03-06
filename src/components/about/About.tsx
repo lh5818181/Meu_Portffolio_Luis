@@ -21,7 +21,7 @@ const About: React.FC = () => {
             modernas para desenvolver aplicações intuitivas e responsivas.
           </p>
           <p>
-            Possuo experiência em <strong>React, Node.js, TypeScript e bancos de dados</strong>, 
+            Possuo experiência em <strong>React, Node.js, TypeScript</strong>, 
             sempre buscando aprender e aprimorar minhas habilidades.
           </p>
           <a 
