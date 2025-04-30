@@ -13,16 +13,16 @@ const About: React.FC = () => {
           />
         </div>
         <div className="about-content">
-          <h2>Sobre Mim</h2>
-          <h3>Desenvolvedor Full-Stack</h3>
+          <h2>Explorando Possibilidades</h2>
+          <h3>Construindo Experiências</h3>
           <p>
-            Olá! Sou Luis Henrique Vieira de Oliveira, um desenvolvedor apaixonado por tecnologia, 
-            especializado na criação de soluções eficientes e inovadoras. Trabalho com tecnologias 
-            modernas para desenvolver aplicações intuitivas e responsivas.
+            Eu sou Luis Henrique, também conhecido como <strong>devriqueoliver</strong>. 
+            Crio interfaces visionárias que unem design, propósito e tecnologia. 
+            Meu foco está em entregar experiências interativas que comunicam valor, com visual impactante e execução precisa.
           </p>
           <p>
-            Possuo experiência em <strong>React, Node.js, TypeScript</strong>, 
-            sempre buscando aprender e aprimorar minhas habilidades.
+            Utilizo ferramentas como <strong>React, TypeScript e Node.js</strong> para transformar ideias em aplicações elegantes, performáticas e modernas.
+            Minha stack não é só código — é identidade digital.
           </p>
           <a 
             href="https://main.d3q0n8jgkd43rl.amplifyapp.com/" 
