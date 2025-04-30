@@ -1,90 +1,127 @@
-/* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #0A192F 0%, #021B79 100%);
-    min-height: 90vh;
+    position: relative;
+    background: radial-gradient(circle at center, #0D0D0D 0%, #000000 100%);
+    min-height: 100vh;
     padding: 100px 20px;
     width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #ffffff;
+    color: #F5F5F5;
     flex-direction: column;
-}
-
-.hero-container {
+  }
+  
+  .hero-container {
+    position: relative;
+    z-index: 1;
     max-width: 900px;
-    margin: 0 auto;
     padding: 0 20px;
-}
-
-.hero h1 {
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  .hero-title {
     font-size: 48px;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 0px 0px 10px rgba(100, 255, 218, 0.8);
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.hero p {
+    font-family: 'Orbitron', sans-serif;
+    animation: glowTitle 2s ease-in-out infinite alternate;
+  }
+  
+  .hero-subtitle {
     font-size: 22px;
     font-weight: 400;
-    margin-top: 10px;
-    animation: fadeIn 1.8s ease-in-out;
-}
-
-.hero .cta-button {
-    margin-top: 20px;
-    padding: 12px 24px;
+    margin-top: 12px;
+    font-family: 'Inter', sans-serif;
+    opacity: 0.85;
+    animation: fadeInUp 2.5s ease forwards;
+  }
+  
+  .highlight {
+    color: #00BFFF;
+    text-shadow: 0 0 12px #00BFFF;
+  }
+  
+  .cta-button {
+    margin-top: 30px;
+    padding: 14px 30px;
     font-size: 18px;
     font-weight: 600;
-    color: #0A192F;
-    background: #64FFDA;
+    color: #0D0D0D;
+    background: #00BFFF;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-    animation: fadeIn 1.5sease-in-out;
-}
-
-.hero .cta-button a {
-    text-decoration: none;
-    color: #0A192F;
-}
-
-.hero .cta-button:hover {
-    background: #52e0c4;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.4);
+    transition: all 0.3s ease;
+    animation: fadeInUp 3s ease forwards;
+  }
+  
+  .cta-button:hover {
+    background: #00aee5;
     transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsividade */
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 40px;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+  }
+  
+  .cta-button a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  @keyframes glowTitle {
+    from {
+      text-shadow: 0 0 8px #00BFFF;
     }
-    .hero p {
-        font-size: 20px;
+    to {
+      text-shadow: 0 0 20px #00BFFF;
     }
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-title {
+      font-size: 40px;
+    }
+    .hero-subtitle {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
     .hero {
-        padding: 80px 0px;
+      padding: 80px 0;
     }
-    .hero h1 {
-        font-size: 36px;
+    .hero-title {
+      font-size: 36px;
     }
-    .hero p {
-        font-size: 18px;
+    .hero-subtitle {
+      font-size: 18px;
     }
-    .hero .cta-button {
-        font-size: 16px;
-        padding: 10px 20px;
-        
+    .cta-button {
+      font-size: 16px;
+      padding: 10px 20px;
     }
-}
+  }
+  

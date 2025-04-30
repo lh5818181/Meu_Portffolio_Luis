@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
       let currentSection = 'hero';
-      
+
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         if (window.scrollY >= sectionTop - 100) {
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">Luis Henrique</div>
+        <div className="logo">devriqueoliver</div>
         <nav className={`menu ${menuActive ? 'active' : ''}`}>
           <ul>
             <li>

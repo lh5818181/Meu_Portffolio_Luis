@@ -1,13 +1,24 @@
 /* Estilos para o Header */
 .header {
   width: 100%;
-  background: #0A192F;
+  background: #0D0D0D; /* Preto Fosco */
   padding: 15px 20px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   transition: background 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2); /* Sombra Azul Neon */
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+  }
 }
 
 .header-container {
@@ -20,12 +31,13 @@
 }
 
 .logo {
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: #00BFFF; /* Azul Neon */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
   cursor: pointer;
   transition: color 0.3s ease;
+  text-shadow: 0 0 5px #00BFFF;
 }
 
 .menu ul {
@@ -40,16 +52,18 @@
 }
 
 .menu a {
-  color: #fff;
+  color: #F5F5F5; /* Branco Gelo */
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.menu a:hover, .menu a.active {
-  color: #64FFDA;
-  text-shadow: 0px 0px 8px #64FFDA;
+.menu a:hover,
+.menu a.active {
+  color: #00BFFF;
+  text-shadow: 0 0 8px #00BFFF;
 }
 
 /* Ícone do hambúrguer */
@@ -62,7 +76,7 @@
 .hamburger div {
   width: 30px;
   height: 3px;
-  background-color: #fff;
+  background-color: #F5F5F5;
   margin: 5px 0;
   transition: 0.4s;
 }
@@ -83,7 +97,7 @@
 /* Menu Mobile */
 @media (max-width: 768px) {
   .header {
-    width: 90%;
+    width: 100%;
   }
   .menu {
     display: none;
@@ -91,7 +105,7 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background: rgba(10, 25, 47, 0.95);
+    background: rgba(13, 13, 13, 0.95);
     text-align: center;
     padding: 20px 0;
   }
@@ -100,12 +114,9 @@
     display: flex;
     flex-direction: column;
   }
+
   .menu ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        flex-direction: column;
+    flex-direction: column;
   }
 
   .menu li {
@@ -116,10 +127,12 @@
     display: flex;
     margin-right: 10px;
   }
+
   .hamburger.open {
     margin-right: 10px;
-}
-.hamburger.open div:nth-child(3) {
-  transform: translateY(-17px) rotate(-45deg);
-}
+  }
+
+  .hamburger.open div:nth-child(3) {
+    transform: translateY(-17px) rotate(-45deg);
+  }
 }
