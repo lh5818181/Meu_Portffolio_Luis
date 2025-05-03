@@ -1,60 +1,60 @@
-footer {
-    background: #021B79;
-    color: #fff;
+/* Paleta: Preto Fosco (#0D0D0D), Azul Neon (#00BFFF), Branco Gelo (#F5F5F5) */
+
+.footer {
+    background-color: #2E2E2E; /* Cinza Grafite */
+    color: #F5F5F5;
     text-align: center;
-    padding: 20px;
-    font-size: 16px;
+    padding: 20px 0;
     width: 100%;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    flex-direction: column;
-    gap: 15px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 16px;
-}
-
-.social-icons {
+  }
+  
+  .footer-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-}
-
-.social-icons a {
-    color: #ffffff;
-    font-size: 24px;
-    transition: 0.3s;
-}
-
-.social-icons a:hover {
-    color: #00c3ff;
-    transform: scale(1.1);
-}
-
-/* Responsividade para Footer */
-@media (max-width: 1024px) {
-    footer {
-        padding: 15px 20px;
-    }
+  }
+  
+  .footer p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .back-to-top {
+    background: #00BFFF; /* Azul Neon */
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .back-to-top svg {
+    color: #0D0D0D; /* Preto Fosco */
+    font-size: 1.2rem;
+  }
+  
+  .back-to-top:hover {
+    background: #009ACD;
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 0 6px #00BFFF);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
+      flex-direction: column;
+      gap: 10px;
     }
-}
-@media (max-width: 768px) {
-    footer {
-        padding: 10px 0px;
+    .back-to-top {
+      padding: 6px;
     }
-    .social-icons a {
-        font-size: 20px;
+    .back-to-top svg {
+      font-size: 1rem;
     }
-}
+  }
+  

@@ -1,113 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;700&display=swap');
+
+/* Paleta: Preto Fosco (#0D0D0D), Azul Neon (#00BFFF), Cinza Grafite (#2E2E2E), Branco Gelo (#F5F5F5) */
+
 .projects {
-    padding: 80px 20px;
-    background-color: #f8f9fa;
-    text-align: center;
-    width: 100%;
+  padding: 80px 20px;
+  background-color: #0D0D0D;
+  text-align: center;
+  width: 100%;
+  color: #F5F5F5;
+  font-family: 'Inter', sans-serif;
 }
 
 .containerProject {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .projects h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #0A192F;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  color: #00BFFF;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(0, 191, 255, 0.6);
 }
 
 .projects p {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 40px;
+  font-size: 18px;
+  color: #CCCCCC;
+  margin-bottom: 40px;
 }
 
-/* Layout de Grid */
 .project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
 }
 
-/* Estilo dos cards */
 .project-item {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  background: #2E2E2E;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 191, 255, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .project-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 191, 255, 0.3);
 }
 
-/* Imagem */
 .project-image-container {
-    width: 100%;
-    height: 180px;
-    overflow: hidden;
-    border-radius: 10px;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Conteúdo */
 .project-content {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 .project-content h3 {
-    font-size: 22px;
-    margin: 10px 0;
-    color: #021B79;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  color: #00BFFF;
+  margin: 10px 0;
 }
 
 .project-content p {
-    font-size: 16px;
-    color: #555;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #AAAAAA;
 }
 
-/* Botão */
 .btn-project {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background: #021B79;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0D0D0D;
+  background: #00BFFF;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
 }
 
 .btn-project:hover {
-    background: #0A192F;
+  background: #00AACC;
+  color: #F5F5F5;
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.6);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
-    .projects {
-        padding: 80px 0px;
-    }
-    .projects h2 {
-        font-size: 28px;
-    }
+  .projects {
+    padding: 80px 0;
+  }
 
-    .project-list {
-        grid-template-columns: 1fr;
-    }
+  .projects h2 {
+    font-size: 28px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,76 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;700&display=swap');
+
+/* Paleta: Preto Fosco (#0D0D0D), Azul Neon (#00BFFF), Cinza Grafite (#2E2E2E), Branco Gelo (#F5F5F5) */
+
 .skills {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #0A192F 0%, #021B79 100%);
-    text-align: center;
-    color: #fff;
-    width: 100%;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0D0D0D 0%, #2E2E2E 100%);
+  text-align: center;
+  color: #F5F5F5;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
 }
 
 .containerSkills {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .skills h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(to right, #00BFFF, #00CFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Grid mais flexível */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .skill-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out, background 0.3s;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(245, 245, 245, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, background 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: scale(1.08);
-    background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-8px) scale(1.05);
+  background: rgba(245, 245, 245, 0.1);
 }
 
-/* Ícones maiores e alinhados */
 .skill-icon {
-    font-size: 50px;
-    margin-bottom: 10px;
-    color: #64ffda;
+  font-size: 50px;
+  margin-bottom: 12px;
+  color: #00BFFF;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.2);
 }
 
 .skill-card h4 {
-    font-size: 18px;
-    margin-bottom: 5px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #F5F5F5;
 }
 
 .skill-card p {
-    font-size: 14px;
-    color: #ddd;
+  font-size: 14px;
+  color: #CCCCCC;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background: rgba(245, 245, 245, 0.1);
+  border-radius: 20px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress {
+  background: linear-gradient(90deg, #00BFFF, #00CFFF);
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+  transition: width 0.4s ease-in-out;
+}
+
+.progress span {
+  position: absolute;
+  right: 5px;
+  top: -22px;
+  font-size: 12px;
+  color: #00BFFF;
+}
+
+/* Animação */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .skills {
-        padding: 80px 0px;
-    }
-    .skills h2 {
-        font-size: 28px;
-    }
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
+  .skills h2 {
+    font-size: 28px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }

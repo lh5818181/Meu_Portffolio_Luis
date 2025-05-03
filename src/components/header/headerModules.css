@@ -1,50 +1,51 @@
-/* Estilos para o Header */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Inter:wght@400;700&display=swap');
+
+/* Paleta: Preto Fosco (#0D0D0D), Azul Neon (#00BFFF), Branco Gelo (#F5F5F5) */
+
 .header {
   width: 100%;
-  background: #0D0D0D; /* Preto Fosco */
+  background: #0D0D0D;
   padding: 15px 20px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  transition: background 0.3s ease-in-out;
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2); /* Sombra Azul Neon */
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
   animation: glow 3s ease-in-out infinite alternate;
+  font-family: 'Inter', sans-serif;
 }
 
 @keyframes glow {
-  0% {
-    box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
-  }
+  from { box-shadow: 0 0 10px rgba(0, 191, 255, 0.2); }
+  to   { box-shadow: 0 0 20px rgba(0, 191, 255, 0.6); }
 }
 
 .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .logo {
-  color: #00BFFF; /* Azul Neon */
+  color: #00BFFF;
   font-family: 'Orbitron', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   cursor: pointer;
-  transition: color 0.3s ease;
   text-shadow: 0 0 5px #00BFFF;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .menu ul {
   display: flex;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .menu li {
@@ -52,53 +53,42 @@
 }
 
 .menu a {
-  color: #F5F5F5; /* Branco Gelo */
-  font-family: 'Poppins', sans-serif;
+  color: #F5F5F5;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
 .menu a:hover,
 .menu a.active {
   color: #00BFFF;
   text-shadow: 0 0 8px #00BFFF;
 }
 
-/* Ícone do hambúrguer */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
 }
-
 .hamburger div {
   width: 30px;
   height: 3px;
-  background-color: #F5F5F5;
+  background: #F5F5F5;
   margin: 5px 0;
-  transition: 0.4s;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
-
-/* Animação do ícone hambúrguer */
 .hamburger.open div:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-
 .hamburger.open div:nth-child(2) {
   opacity: 0;
 }
-
 .hamburger.open div:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Menu Mobile */
 @media (max-width: 768px) {
-  .header {
-    width: 100%;
-  }
   .menu {
     display: none;
     position: absolute;
@@ -106,33 +96,20 @@
     left: 0;
     width: 100%;
     background: rgba(13, 13, 13, 0.95);
+    flex-direction: column;
     text-align: center;
     padding: 20px 0;
   }
-
   .menu.active {
     display: flex;
-    flex-direction: column;
   }
-
   .menu ul {
     flex-direction: column;
   }
-
   .menu li {
     margin: 15px 0;
   }
-
   .hamburger {
     display: flex;
-    margin-right: 10px;
-  }
-
-  .hamburger.open {
-    margin-right: 10px;
-  }
-
-  .hamburger.open div:nth-child(3) {
-    transform: translateY(-17px) rotate(-45deg);
   }
 }
