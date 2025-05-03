@@ -112,7 +112,7 @@
 /* Responsividade para tablets */
 @media (max-width: 1080px) {
     .skills {
-      padding: 60px 15px; /* Reduz o padding geral */
+      padding: 60px 20px; /* Reduz o padding geral */
     }
   
     .skills h2 {

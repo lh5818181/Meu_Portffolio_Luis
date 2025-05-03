@@ -127,6 +127,46 @@
 }
 
 /* Responsividade */
+/* Responsividade para tablets */
+@media (max-width: 1080px) {
+  .about {
+    padding: 80px 20px; /* Reduz o padding geral */
+  }
+
+  .about-container {
+    gap: 40px; /* Reduz o espaçamento entre os elementos */
+  }
+
+  .about-img {
+    width: 150px; /* Reduz o tamanho da imagem */
+    height: 150px;
+  }
+
+  .about-content {
+    max-width: 500px; /* Ajusta a largura máxima do conteúdo */
+  }
+
+  .about h2 {
+    font-size: 32px; /* Reduz o tamanho do título */
+  }
+
+  .about h3 {
+    font-size: 20px; /* Reduz o tamanho do subtítulo */
+  }
+
+  .about p {
+    font-size: 16px; /* Reduz o tamanho do texto */
+  }
+
+  .btn-saiba-mais {
+    padding: 10px 20px; /* Ajusta o padding do botão */
+    font-size: 14px; /* Reduz o tamanho do texto do botão */
+  }
+}
+
+
+
+
 @media (max-width: 768px) {
   .about {
     padding: 100px 0;
