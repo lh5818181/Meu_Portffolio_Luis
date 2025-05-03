@@ -57,14 +57,48 @@
     }
   }
   
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .contact h2 {
-      font-size: 2rem;
+/* Responsividade para tablets */
+@media (max-width: 1080px) {
+    .contact {
+      padding: 60px 15px; /* Reduz o padding geral */
     }
+  
+    .contact h2 {
+      font-size: 2.2rem; /* Reduz o tamanho do título */
+    }
+  
+    .contact p {
+      font-size: 1rem; /* Reduz o tamanho do texto */
+    }
+  
+    .social-icons {
+      gap: 20px; /* Reduz o espaçamento entre os ícones */
+    }
+  
     .social-icons a {
-      font-size: 1.8rem;
-      gap: 18px;
+      font-size: 2rem; /* Reduz o tamanho dos ícones */
     }
   }
   
+  /* Responsividade para smartphones */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 40px 0px; /* Reduz ainda mais o padding geral */
+    }
+  
+    .contact h2 {
+      font-size: 2rem; /* Reduz o tamanho do título */
+    }
+  
+    .contact p {
+      font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+  
+    .social-icons {
+      gap: 15px; /* Reduz o espaçamento entre os ícones */
+    }
+  
+    .social-icons a {
+      font-size: 1.8rem; /* Reduz o tamanho dos ícones */
+    }
+  }

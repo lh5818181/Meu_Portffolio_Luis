@@ -109,12 +109,73 @@
   }
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .skills h2 {
-    font-size: 28px;
+/* Responsividade para tablets */
+@media (max-width: 1080px) {
+    .skills {
+      padding: 60px 15px; /* Reduz o padding geral */
+    }
+  
+    .skills h2 {
+      font-size: 32px; /* Reduz o tamanho do título */
+    }
+  
+    .skills-grid {
+      gap: 15px; /* Reduz o espaçamento entre os cartões */
+    }
+  
+    .skill-card {
+      padding: 15px; /* Reduz o padding interno dos cartões */
+    }
+  
+    .skill-icon {
+      font-size: 45px; /* Reduz o tamanho do ícone */
+    }
+  
+    .skill-card h4 {
+      font-size: 16px; /* Reduz o tamanho do título do cartão */
+    }
+  
+    .skill-card p {
+      font-size: 13px; /* Reduz o tamanho do texto descritivo */
+    }
   }
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  
+  /* Responsividade para smartphones */
+  @media (max-width: 768px) {
+    .skills {
+      padding: 40px 0px; /* Reduz ainda mais o padding geral */
+    }
+  
+    .skills h2 {
+      font-size: 28px; /* Reduz o tamanho do título */
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o layout para cartões menores */
+      gap: 10px; /* Reduz o espaçamento entre os cartões */
+    }
+  
+    .skill-card {
+      padding: 10px; /* Reduz o padding interno dos cartões */
+    }
+  
+    .skill-icon {
+      font-size: 40px; /* Reduz o tamanho do ícone */
+    }
+  
+    .skill-card h4 {
+      font-size: 14px; /* Reduz o tamanho do título do cartão */
+    }
+  
+    .skill-card p {
+      font-size: 12px; /* Reduz o tamanho do texto descritivo */
+    }
+  
+    .progress-bar {
+      height: 8px; /* Reduz a altura da barra de progresso */
+    }
+  
+    .progress span {
+      font-size: 10px; /* Reduz o tamanho do texto da porcentagem */
+    }
   }
-}
