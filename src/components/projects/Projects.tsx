@@ -11,7 +11,7 @@ const projectsData = [
   {
     title: 'Calculadora Aritmética',
     description: 'Calculadora desenvolvida com React e gráficos dinâmicos.',
-    image: 'https://raw.githubusercontent.com/lh5818181/Repositorioi_imagens_sitePrincipal/refs/heads/main/Calculadora%20Arit%C3%A9tica.png',
+    image: 'https://raw.githubusercontent.com/lh5818181/SERVIDOR-ESTATICO-IMAGENS/refs/heads/main/calculadora.png',
     link: 'https://calculadora-aritimetica-vue-js-nu.vercel.app'
   },
   {
