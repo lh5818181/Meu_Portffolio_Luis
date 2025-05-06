@@ -3,22 +3,22 @@ import './projects.css';
 
 const projectsData = [
   {
-    title: 'Landing Page HTML & CSS',
-    description: 'Uma landing page responsiva desenvolvida com HTML, CSS e Bootstrap.',
-    image: 'https://raw.githubusercontent.com/lh5818181/Repositorioi_imagens_sitePrincipal/refs/heads/main/Landingpage%20para%20evento.png',
-    link: 'https://aniversario-luis-lvux.vercel.app'
+    title: 'Landing Page Áurea Financeira',
+    description: 'Landing page de vendas desenvolvida com React, TypeScript e Vite.',
+    image: 'https://raw.githubusercontent.com/lh5818181/SERVIDOR-ESTATICO-IMAGENS/refs/heads/main/AUREA%20FINANCEIRA.png',
+    link: 'https://landing-page-aurea-financeira.vercel.app/'
   },
   {
     title: 'Calculadora Aritmética',
     description: 'Calculadora desenvolvida com React e gráficos dinâmicos.',
-    image: 'https://raw.githubusercontent.com/lh5818181/Repositorioi_imagens_sitePrincipal/refs/heads/main/Calculadora%20Aritm%C3%A9tica.png',
+    image: 'https://raw.githubusercontent.com/lh5818181/Repositorioi_imagens_sitePrincipal/refs/heads/main/Calculadora%20Arit%C3%A9tica.png',
     link: 'https://calculadora-aritimetica-vue-js-nu.vercel.app'
   },
   {
-    title: 'Clone do Site da Disney',
-    description: 'Desenvolvido com HTML, CSS e JavaScript.',
-    image: 'https://raw.githubusercontent.com/lh5818181/Repositorioi_imagens_sitePrincipal/refs/heads/main/clone%20da%20disney.png',
-    link: 'https://clone-disney-plus-2wds.vercel.app'
+    title: 'Lista de Contatos',
+    description: 'Lista de contatos desenvolvida com React e TypeScript.',
+    image: 'https://raw.githubusercontent.com/lh5818181/SERVIDOR-ESTATICO-IMAGENS/refs/heads/main/Lista%20de%20contatos%20react.png',
+    link: 'https://lista-contatos-react-five.vercel.app/'
   }
 ];
 
@@ -32,12 +32,21 @@ const Projects: React.FC = () => {
           {projectsData.map((project, index) => (
             <div key={index} className="project-item">
               <div className="project-image-container">
-                <img src={project.image} alt={project.title} className="project-image" />
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
               </div>
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn-project">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-project"
+                >
                   Ver Projeto
                 </a>
               </div>
